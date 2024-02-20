@@ -1,13 +1,12 @@
 import React from 'react'
 
-export default function 
-() {
+export default function ToDoItem(props) {
   return (
     <div>
         <li className='todo-item'>
             <span>
-            <input type="checkbox"/>
-            <span>Eat</span>
+          { props.completed? <></> : <input type="checkbox"/> }
+            <span>{props.text}</span>
             </span>
             <p>....</p>
         </li>

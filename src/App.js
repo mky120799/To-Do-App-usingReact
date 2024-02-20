@@ -6,8 +6,8 @@ function App() {
   return (
    <div className='todo-container'>
 
-      <Header/>
-       <ToDoItem/>
+      <Header title="ToDo App"/>
+       <ToDoItem completed={true} text="Eat"/>
        <ToDoItem/>
        <ToDoItem/>
        <ToDoItem/>
